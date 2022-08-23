@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+    /* bu kod ile 1rem=10px */
+  }
+   .container{
+    width: 150vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .form-wrapper{
+    width: 160rem;
+    height: 70rem;
+    background-color: #eee;
+    border-radius: 3rem;
+    box-shadow: 3rem 3rem 9rem rgba(0,0,0,0.4);
+    position: relative;   
+    overflow: hidden;
+}
+
+.banner {
+ position: absolute;
+ top:25%;
+ left: -30rem;
+ z-index: 100;
+ width: 30rem;
+ text-align: center;
+ color: #fff ;
+transition: 0.9sn;
+}
+
+.container.change .banner {
+    left: 5rem;
+}
+
+
+.banner h1{
+    font-size: 6rem;
+    margin-top: 2rem;
+ 
+}
+.banner p {
+font-size: 2rem;
+}
+
+.green-bg {
+    background: rgb(37, 212, 154);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+     transition: width 1.5s cublic-bexier(0.19,1, 0.22, 1);
+
+} 
+ 
+.container.change .green-bg {
+    width: 45%;
+}
+
+.green-bg button {
+    position: absolute;
+    top: 72%;
+    left: 23%;
+    transform: translateX(-50);
+    border:0.1rem solid #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    width: 16rem;
+    height: 5rem;
+    font-size: 2.3rem ;
+    letter-spacing: 4px;
+    color:rgb(15, 13, 13);
+    cursor: pointer;
+  }
+
+  .signup-form {
+    width: 60rem;
+    height: 100;
+    position: absolute;
+    top:0;
+    left:0rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 0;
+    transition: left 0.8s;
+  }
+
+  .container.change .signup-form {
+    left: 40rem;
+  }
+
+.signup-form h1 {
+    font-size: 4rem;
+    color: #4cbf91;
+}
+.social-media{
+    display: flex;
+}
+
+.social-medya i{
+    width: 4rem;
+    height: 4rem;
+    border: 0.1rem solid #777;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: #555;
+}
+.signup-form p {
+    font-size: 2rem;
+    color: #555;
+  }
+  .input-group {
+    position: relative;
+  }
+  
+  .input-group input {
+    width: 28rem;
+    height: 5rem;
+    border: none;
+    background-color: #ddd;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+  }
+
+  .input-group i {
+    position: absolute;
+    top: 50%;
+    left: 0.8rem;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #555;
+  }
+
+  .signup-form button {
+    width: 16rem;
+    height: 5rem;
+    background-color:aquamarine;
+    border:none;
+    border-radius: 1rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .form-control{
+    margin: 10px;
+    
+  }
+ .banner h2{
+  z-index: 55;
+ }
